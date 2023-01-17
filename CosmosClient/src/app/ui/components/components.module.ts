@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BasketModule } from './basket/basket.module';
 import { BooksModule } from './books/books.module';
-import { HomeModule } from './home/home.module';
+
 
 
 
@@ -11,8 +11,8 @@ import { HomeModule } from './home/home.module';
   imports: [
     CommonModule,
     BasketModule,
-    BooksModule,
-    HomeModule
+    BooksModule
+    
   ]
 })
 export class ComponentsModule { }

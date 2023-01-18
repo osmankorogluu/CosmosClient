@@ -9,21 +9,19 @@ import { RouterModule, Routes } from '@angular/router'
 import { AppComponent } from './app.component';
 import { UiModule } from './ui/ui.module';
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';import {trigger,state,style,animate,transition}from '@angular/animations';
 
-import { LayoutComponent } from './admin/layout/layout.component';
-import { HomeComponent } from './ui/components/home copy/home.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent
+   AppComponent
   ],
   imports: [
     BrowserModule,
-   // RouterModule.forRoot(routes),
-    
-    AdminModule, 
-    UiModule, AppRoutingModule
+     BrowserAnimationsModule,
+    AppRoutingModule,
+    AdminModule, UiModule
   ],
   
   

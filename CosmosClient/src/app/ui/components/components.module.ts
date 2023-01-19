@@ -20,10 +20,12 @@ import { HomeModule } from './home/home.module';
     CommonModule,
     BooksModule,
     HomeModule,
-    BasketModule
+    BasketModule,
+    RouterModule
     
   ],
   exports:[
+    
    
   ]
 })

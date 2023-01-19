@@ -9,11 +9,11 @@ const routes: Routes = [
   {
     path: "admin", component: LayoutComponent,children:[
       {path:"",component:DashboardComponent},
-      {path:"customers", loadChildren: () => import ( "./admin/components/customer/customer.module").then
+      {path:"customer", loadChildren: () => import ( "./admin/components/customer/customer.module").then
       (module=> module.CustomerModule)},
       {path:"book", loadChildren: () => import ( "./admin/components/book/book.module").then
       (module=> module.BookModule)},
-      {path:"orders", loadChildren: () => import ( "./admin/components/order/order.module").then
+      {path:"order", loadChildren: () => import ( "./admin/components/order/order.module").then
       (module=> module.OrderModule)},
       {path:"category", loadChildren: () => import ( "./admin/components/category/category.module").then
       (module=> module.CategoryModule)},
@@ -21,7 +21,7 @@ const routes: Routes = [
   },
   
     { path:"",component: HomeComponent},
-    {path:"basket",loadChildren:() => import("./ui/components/basket/basket.component").then(module => module.BasketComponent),},
+    {path:"basket",loadChildren:() => import("./ui/components/basket/basket.module").then(module => module.BasketModule),},
     {path:"books",loadChildren:() => import("./ui/components/books/books.module").then(module => module.BooksModule),}
 
   

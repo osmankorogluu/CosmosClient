@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+import { NotificationsService } from 'angular2-notifications/public_api';
+declare var $: any
 
 @Component({
   selector: 'app-root',
@@ -10,7 +12,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   
   title = 'CosmosClient';
+  }
+
+
   
-
-
-}

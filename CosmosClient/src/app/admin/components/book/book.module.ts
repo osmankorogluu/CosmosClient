@@ -6,12 +6,14 @@ import { OrderComponent } from '../order/order.component';
 
 
 
+
 @NgModule({
   declarations: [
     BookComponent
   ],
   imports: [
     CommonModule,
+
     RouterModule.forChild([
       {path:"",component: BookComponent}
     ])

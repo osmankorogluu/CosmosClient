@@ -10,28 +10,34 @@ import { AppComponent } from './app.component';
 import { UiModule } from './ui/ui.module';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {trigger,state,style,animate,transition}from '@angular/animations';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 import { SimpleNotificationsModule } from 'angular2-notifications';
+import { ToastrModule } from 'ngx-toastr';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { BaseComponent } from './base/base.component';
 
 
 
 
 @NgModule({
   declarations: [
-   AppComponent
+    AppComponent,
+    
   ],
   imports: [
     BrowserModule,
-     BrowserAnimationsModule,
-     SimpleNotificationsModule.forRoot(),
-   
+    BrowserAnimationsModule,
+    SimpleNotificationsModule.forRoot(),
+    ToastrModule.forRoot(),
+    NgxSpinnerModule,
     AppRoutingModule,
+    
     AdminModule, UiModule
   ],
-  
-  
+
+
   providers: [],
   bootstrap: [AppComponent],
-  
+
 })
 export class AppModule { }

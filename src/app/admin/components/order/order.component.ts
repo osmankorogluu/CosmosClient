@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-order',
@@ -7,7 +8,13 @@ import { Component } from '@angular/core';
 })
 export class OrderComponent {
 
+constructor(private spinner: NgxSpinnerService){}
+ngOnInit(): void{
+  this.spinner.show();
 
+  
+}
   }
+  
   
  
